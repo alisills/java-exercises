@@ -13,12 +13,21 @@ public class _2_Operators {
         // TODO: 1 - Use arithmetic operators (+, -, *, /) on two int variables and print the results
         // Declare two int variables (e.g., a = 10, b = 3)
         // Print the result of a + b, a - b, a * b, and a / b
-
+        int a = 10;
+        int b = 3;
+        IO.println(a + b);
+        IO.println(a - b);
+        IO.println(a * b);
+        IO.println(a / b);
+        IO.println();
 
         // TODO: 2 - Use the modulus operator (%) to check if a number is even
         // Declare an int variable called number with any value.
         // Print the result of number % 2
         // Print whether the number is even (result is 0) or odd (result is 1)
+        int number = 33;
+        IO.println(number % 2);
+        IO.println(number + " is odd");
 
 
         // TODO: 3 - Use increment (++) and decrement (--) operators
