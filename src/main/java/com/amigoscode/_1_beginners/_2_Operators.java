@@ -29,33 +29,65 @@ public class _2_Operators {
         IO.println(number % 2);
         IO.println(number + " is odd");
 
+        IO.println();
 
         // TODO: 3 - Use increment (++) and decrement (--) operators
         // Declare an int variable called counter, set it to 5
         // Use counter++ and print the result, then use counter-- and print the result
+        int counter = 5;
+        counter++;
+        IO.println(counter);
+        counter--;
+        IO.println(counter);
 
+        IO.println();
 
         // TODO: 4 - Use compound assignment operators (+=, -=, *=)
         // Declare an int variable called score, set it to 10
         // Use +=, -=, and *= on score, printing after each operation
+        int score = 10;
+        score += score;
+        IO.println(score);
+        score -= score;
+        IO.println(score);
+        score *= score;
+        IO.println(score);
 
+        IO.println();
 
         // TODO: 5 - Use comparison operators (==, !=, >, <, >=, <=) and print the boolean results
         // Declare two int variables (e.g., x = 5, y = 10)
         // Print the result of each comparison, e.g.: System.out.println("x == y: " + (x == y));
+        int x = 5;
+        int y = 10;
+        IO.println("x == y " + (x == y));
+        IO.println("x != y " + (x != y));
+        IO.println("x > y " + (x > y));
+        IO.println("x < y " + (x < y));
+        IO.println("x >= y " + (x >= y));
+        IO.println("x <= y " + (x <= y));
 
+        IO.println();
 
         // TODO: 6 - Use logical operators (&&, ||, !) to combine conditions
         // Declare two boolean variables (e.g., hasLicense = true, hasInsurance = false)
         // Print the result of: hasLicense && hasInsurance
         // Print the result of: hasLicense || hasInsurance
         // Print the result of: !hasLicense
+        boolean hasLicense = true;
+        boolean hasInsurance = false;
+        IO.println("hasLicense && hasInsurance " + (hasLicense && hasInsurance));
+        IO.println("hasLicense || hasInsurance " + (hasLicense || hasInsurance));
+        IO.println("!hasLicense " + (!hasLicense));
 
+        IO.println();
 
         // TODO: 7 - Use the ternary operator to assign "adult" or "minor" based on age
         // Declare an int variable called age with any value
         // Use the ternary operator: String status = (condition) ? "adult" : "minor";
         // Print the status
-
+        int age = 33;
+        String status = age > 18 ? "adult" : "minor";
+        IO.println(status);
     }
 }
