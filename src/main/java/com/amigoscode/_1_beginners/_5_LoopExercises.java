@@ -12,10 +12,17 @@ public class _5_LoopExercises {
 
         // TODO: 1 - Write a for loop to print numbers 1 to 10
         // Hint: for (int i = 1; i <= 10; i++) { ... }
-
-
+        for (int i = 1; i <= 10; i++) {
+            IO.println(i);
+        }
+        IO.println();
         // TODO: 2 - Write a while loop to print numbers 10 down to 1 (countdown)
         // Hint: Declare a variable before the loop, use a condition, and decrement inside the loop.
+        int countdown = 10;
+        for (int i = countdown; i >= 1; i--) {
+            // countdown = i;
+            IO.println(i);
+        } // Started freaking out when I got here, but I was able to slow down and understand what I needed to do
 
 
         // TODO: 3 - Write a do-while loop that runs at least once
