@@ -109,7 +109,15 @@ public class LoopExercises {
         // TODO: 5 - Use nested loops to print a centered pyramid of stars.
         //  For each row i (0-based), print (rows - i - 1) spaces followed by (2 * i + 1) stars.
         //  Print a newline after each row.
-
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < rows - i - 1; j++) {
+                IO.print(" ");
+            }
+            for (int k = 0; k < 2 * i + 1; k++) {
+                IO.print("*");
+            }
+            IO.println();
+        }
     }
 
     /**
