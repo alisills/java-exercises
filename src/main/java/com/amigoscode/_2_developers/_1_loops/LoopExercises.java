@@ -21,7 +21,12 @@ public class LoopExercises {
         // TODO: 1 - Use nested for loops to print an n x n multiplication table.
         //  Outer loop iterates rows 1..n, inner loop iterates columns 1..n.
         //  Print each product followed by a tab, and a newline after each row.
-
+        for (int i = 1; i < n; i++) {
+            for (int j = 1; j < n; j++) {
+                IO.print(i * j + " ");
+            }
+            IO.println();
+        }
     }
 
     /**
@@ -35,7 +40,15 @@ public class LoopExercises {
         int sum = 0;
         // TODO: 2 - Loop from 1 to n. Use 'continue' to skip multiples of 3.
         //  Use 'break' to stop if sum exceeds 100. Add the current number to sum otherwise.
-
+        for (int i = 1; i < n; i++) {
+            if (n % 3 == 0) {
+                continue;
+            } else if (n > 100) {
+                break;
+            } else {
+                sum += i;
+            }
+        }
         return sum;
     }
 
@@ -53,7 +66,15 @@ public class LoopExercises {
         //  Use nested loops to iterate through the matrix.
         //  When the target is found, set result to "Found at [row][col]" and
         //  use 'break search;' to exit both loops.
-
+        search:
+        for (int i = 1; i < 9; i++) {
+            for (int j = 1; j < 9; j++) {
+                if (i == target) {
+                    result = "Found at [row][col]";
+                    break search;
+                }
+            }
+        }
         return result;
     }
 
