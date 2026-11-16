@@ -1,5 +1,7 @@
 package com.amigoscode._2_developers._1_loops;
 
+import static java.lang.Math.random;
+
 /**
  * Loop Exercises
  *
@@ -131,7 +133,9 @@ public class LoopExercises {
         StringBuilder sb = new StringBuilder();
         // TODO: 6 - Use a for loop starting from the last index down to 0.
         //  Append each element to sb. Add ", " between elements but not after the last one.
-
+        for (int i = arr.length; i <= i - 1; i--) {
+            IO.println(arr.length);
+        }
         return sb.toString();
     }
 
@@ -149,7 +153,12 @@ public class LoopExercises {
         // TODO: 7 - Use while(true) to create an infinite loop.
         //  Each iteration: increment attempts, generate a random int between 1 and 100,
         //  and break if it matches the target.
-
+        while (true) {
+            attempts = random.nextInt(100) + 1;
+            if (attempts == target) {
+                break;
+            }
+        }
         return attempts;
     }
 
