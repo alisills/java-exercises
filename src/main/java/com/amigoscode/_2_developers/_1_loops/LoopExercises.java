@@ -133,8 +133,11 @@ public class LoopExercises {
         StringBuilder sb = new StringBuilder();
         // TODO: 6 - Use a for loop starting from the last index down to 0.
         //  Append each element to sb. Add ", " between elements but not after the last one.
-        for (int i = arr.length; i <= i - 1; i--) {
-            IO.println(arr.length);
+        for (int i = arr.length - 1; i >= 0; i--) {
+            sb.append(arr[i]);
+            if (i > arr.length - 5) {
+                sb.append(", ");
+            }
         }
         return sb.toString();
     }
