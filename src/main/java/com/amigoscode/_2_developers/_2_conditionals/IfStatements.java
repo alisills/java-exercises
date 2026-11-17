@@ -18,7 +18,7 @@ public class IfStatements {
     public static String evenOrOdd(int number) {
         // TODO: 1 - Use the ternary operator ( condition ? valueIfTrue : valueIfFalse )
         //  to return "Even" or "Odd" based on whether number % 2 == 0.
-        return null;
+       return (number % 2 == 0) ? "Even" : "Odd";
     }
 
     /**
