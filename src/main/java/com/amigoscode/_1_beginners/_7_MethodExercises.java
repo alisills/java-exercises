@@ -11,7 +11,7 @@ public class _7_MethodExercises {
     // TODO: 1 - Create a method called greet that takes a String parameter 'name'
     // and prints "Hello, {name}!"
     // Hint: public static void greet(String name) { ... }
-    public static void greet(String name) {
+    static void greet(String name) {
         IO.println("Hello, " + name + "!");
         return;
     }
@@ -19,7 +19,7 @@ public class _7_MethodExercises {
     // TODO: 2 - Create a method called add that takes two int parameters (a, b)
     // and returns their sum
     // Hint: public static int add(int a, int b) { ... }
-    public static int add(int a, int b) {
+    static int add(int a, int b) {
         IO.println(a + b);
         return a + b;
     }
@@ -27,7 +27,7 @@ public class _7_MethodExercises {
     // TODO: 3 - Create a method called isEven that takes an int parameter 'number'
     // and returns true if the number is even, false otherwise
     // Hint: Use the modulus operator (%)
-    public static void isEven(int number) {
+    static void isEven(int number) {
         if (number % 2 == 0) {
             IO.println("true");
         } else IO.println("false");
@@ -37,7 +37,7 @@ public class _7_MethodExercises {
     // TODO: 4 - Create a method called max that takes two int parameters (a, b)
     // and returns the larger of the two
     // Hint: Use an if statement or the ternary operator
-    public static void max(int a, int b) {
+    static void max(int a, int b) {
         if (a > b) {
             IO.println(a + " is greater than " + b);
         } else if (a < b) {
@@ -49,7 +49,7 @@ public class _7_MethodExercises {
     // TODO: 5 - Create a method called factorial that takes an int parameter 'n'
     // and returns n! (n factorial) using a loop
     // Hint: 5! = 5 * 4 * 3 * 2 * 1 = 120. Use a long return type for larger values.
-    public static void factorial(long n) {
+    static void factorial(long n) {
         for (int i = 1; i <= 5 ; i++) {
             IO.println(n *= 5);
         }
