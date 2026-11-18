@@ -9,7 +9,7 @@ package com.amigoscode._1_beginners;
  */
 public class _8_StringExercises {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         String message = "Hello, Welcome to Amigoscode!";
         String padded = "   Hello World   ";
