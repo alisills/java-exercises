@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class _10_MiniProject {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         // TODO: 1 - Create a Scanner for user input
         Scanner scanner = new Scanner(System.in);
