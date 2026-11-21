@@ -11,27 +11,42 @@ public class AccessModifiers {
 
     // TODO: 1 - Declare a private String field called 'secret'.
     //  Private means only this class can access it directly.
-
+    private static String secret;
 
     // TODO: 2 - Declare a public method called 'publicGreeting' that returns
     //  the String "Hello from a public method!".
     //  Public means any class, in any package, can call this method.
-
+    static void publicGreeting() {
+        
+        IO.println("Hello from a public method!");
+    }
 
     // TODO: 3 - Declare a protected method called 'protectedGreeting' that returns
     //  the String "Hello from a protected method!".
     //  Protected means accessible within this package and by subclasses in other packages.
-
+    protected static void protectedGreeting() {
+        
+        IO.println("Hello from a protected method!");
+    }
 
     // TODO: 4 - Declare a package-private (default) method called 'packageGreeting'
     //  that returns the String "Hello from a package-private method!".
     //  Package-private means no access modifier keyword — accessible only within this package.
-
+    static void packageGreeting() {
+        IO.println("Hello from a package-private method!");
+    }
 
     // TODO: 5 - Create a getter (getSecret) and a setter (setSecret) for the 'secret' field.
     //  The getter should be public and return the secret.
     //  The setter should be public, take a String parameter, and assign it to the field.
-
+   public static String getSecret() {
+        return AccessModifiers.secret;
+   }
+   
+   public static String setSecret(String stringParameter) {
+        AccessModifiers.secret = stringParameter;
+        return secret;
+   }
 
     // TODO: 6 - Create a public method called 'demonstrateInternalAccess' that:
     //  - Sets the secret field directly (not through the setter) to "Internal access works!"
@@ -39,5 +54,10 @@ public class AccessModifiers {
     //  - Returns a String summarizing: the secret value and all three greetings,
     //    separated by newlines.
     //  This demonstrates that within the same class, ALL access levels are accessible.
-
+    static void demonstrateInternalAccess() {
+        secret = "Internal access works!";
+        AccessModifiers.publicGreeting();
+        AccessModifiers.protectedGreeting();
+        AccessModifiers.packageGreeting();
+    }
 }

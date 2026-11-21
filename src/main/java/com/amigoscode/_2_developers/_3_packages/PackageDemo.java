@@ -24,7 +24,7 @@ public class PackageDemo {
     /**
      * Creates a List of three fruit names and prints it.
      */
-    public static void useListFromUtil() {
+    static void useListFromUtil() {
         // TODO: 1 (continued) - Create a List<String> using ArrayList, add three fruits,
         //  and print the list. Make sure you have the import statements at the top.
         List<String> fruits = new ArrayList<>(3);
@@ -37,7 +37,7 @@ public class PackageDemo {
     /**
      * Prints today's date using LocalDate.now().
      */
-    public static void printToday() {
+    static void printToday() {
         // TODO: 2 (continued) - Use LocalDate.now() to get today's date and print it.
         //  Make sure you have the import statement at the top.
         IO.println(LocalDate.now());
@@ -47,7 +47,7 @@ public class PackageDemo {
      * Uses a fully qualified class name to create a HashMap without importing it.
      * Adds two entries and prints the map.
      */
-    public static void useFullyQualifiedName() {
+    static void useFullyQualifiedName() {
         // TODO: 3 - Create a java.util.HashMap<String, Integer> using the fully qualified
         //  class name (no import). Put two entries (e.g., "Alice"->90, "Bob"->85) and print it.
         //  Example: java.util.HashMap<String, Integer> map = new java.util.HashMap<>();
@@ -67,7 +67,7 @@ public class PackageDemo {
      * @param radius the radius of the circle
      * @return the area
      */
-    public static double circleArea(double radius) {
+    static double circleArea(double radius) {
         // TODO: 4 (continued) - Return PI * radius * radius using the statically imported PI.
         //  You need to add: import static java.lang.Math.PI; at the top of this file.
         return Math.PI * radius * radius;
@@ -77,7 +77,7 @@ public class PackageDemo {
      * Creates an instance of a class from another package in this project
      * and prints it.
      */
-    public static void useClassFromAnotherPackage() {
+    static void useClassFromAnotherPackage() {
         // TODO: 5 - Import or use a fully qualified name for a class from another package
         //  in this project (e.g., com.amigoscode._2_developers._2_conditionals.IfStatements).
         //  Call one of its static methods and print the result.
