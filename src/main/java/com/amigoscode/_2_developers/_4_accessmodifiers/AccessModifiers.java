@@ -17,7 +17,6 @@ public class AccessModifiers {
     //  the String "Hello from a public method!".
     //  Public means any class, in any package, can call this method.
     static void publicGreeting() {
-        
         IO.println("Hello from a public method!");
     }
 
@@ -25,7 +24,6 @@ public class AccessModifiers {
     //  the String "Hello from a protected method!".
     //  Protected means accessible within this package and by subclasses in other packages.
     protected static void protectedGreeting() {
-        
         IO.println("Hello from a protected method!");
     }
 
@@ -54,10 +52,11 @@ public class AccessModifiers {
     //  - Returns a String summarizing: the secret value and all three greetings,
     //    separated by newlines.
     //  This demonstrates that within the same class, ALL access levels are accessible.
-    static void demonstrateInternalAccess() {
+    public static void demonstrateInternalAccess() {
         secret = "Internal access works!";
-        AccessModifiers.publicGreeting();
-        AccessModifiers.protectedGreeting();
-        AccessModifiers.packageGreeting();
+        publicGreeting();
+        protectedGreeting();
+        packageGreeting();
+        IO.println();
     }
 }

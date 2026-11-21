@@ -12,7 +12,7 @@ public class VarArgs {
     //  Returns the sum of all provided numbers.
     //  If no arguments are provided, return 0.
     //  Hint: use a for-each loop to iterate over 'numbers'.
-
+    
 
     // TODO: 2 - Create a method: String concatenate(String... strings)
     //  Joins all strings with a single space between them.
